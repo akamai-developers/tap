@@ -1,10 +1,10 @@
-# Akamai-developers Tap
+# Akamai-developers Brew Tap 🍻
 
 ## How do I install these formulae?
 
 `brew install akamai-developers/tap/<formula>`
 
-Or `brew tap akamai-developers/tap` and then `brew install <formula>`.
+Or `brew tap akamai-developers/tap` and then `brew install akamai-developers/tap/<formula>`.
 
 Or, in a `brew bundle` `Brewfile`:
 
@@ -12,7 +12,3 @@ Or, in a `brew bundle` `Brewfile`:
 tap "akamai-developers/tap"
 brew "<formula>"
 ```
-
-## Documentation
-
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
