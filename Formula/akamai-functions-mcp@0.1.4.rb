@@ -1,28 +1,28 @@
-class AkamaiFunctionsMcp < Formula
+class AkamaiFunctionsMcpAT014 < Formula
   desc "A MCP Server for Akamai Functions"
   homepage "https://github.com/akamai-developers/akamai-functions-mcp-server"
   license "MIT"
-  version "0.1.5"
+  version "0.1.4"
 
   depends_on "spinframework/tap/spin"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/akamai-developers/akamai-functions-mcp-server/releases/download/v#{version}/akamai-functions-mcp-#{version}-darwin-arm64.tar.gz"
-      sha256 "04d1bb8925e64b23c25f5759fe0d8fbb4a6dbbff214b36b60de70e9702efb5da"
+      sha256 "554ce5567ed5f8247a21fbf18162d917a0391b954909df582ebf6d7d0ceffb05"
     else
       url "https://github.com/akamai-developers/akamai-functions-mcp-server/releases/download/v#{version}/akamai-functions-mcp-#{version}-darwin-amd64.tar.gz"
-      sha256 "b67f31cd7b8ed5c70348aa5c18da8f4f30b86098013e8b484a46f1c911e99ea8"
+      sha256 "6b63c8df3c96dbca9fdfadf4f2fd49eae7c5474d8a983d0b3e845812daf1ead0"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/akamai-developers/akamai-functions-mcp-server/releases/download/v#{version}/akamai-functions-mcp-#{version}-linux-arm64.tar.gz"
-      sha256 "3b28e1a6d851e6a84246750f7e91b1d2e73dff61b13748800c70086fba305a69"
+      sha256 "6daa93c7810d153fef1703bd0ec2abb3123f857d4fa430c2a52d8e7a56c08e2e"
     else
       url "https://github.com/akamai-developers/akamai-functions-mcp-server/releases/download/v#{version}/akamai-functions-mcp-#{version}-linux-amd64.tar.gz"
-      sha256 "98d9dacce0cbef115d314a55a7b580f55371ad3e8cb854af98d16b75d08d5342"
+      sha256 "a591497004ac2c0e12263d0d8b617465594a1e9542bdbfa42ac095b1064a2afd"
     end
   end
 
